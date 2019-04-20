@@ -41,6 +41,7 @@ export class ChartItemComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.chartHeight);
     this.currentChartType = this.chartConfiguration.type;
     this.renderId = this.chartConfiguration.renderId;
     this.drawChart(this.analyticsObject, this.chartConfiguration);
